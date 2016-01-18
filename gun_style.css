@@ -103,12 +103,15 @@ p{
 nav{
 	float: right;
 	z-index: 100;
-	padding-top: 20px;
+	padding: 20px;
 	margin-right: 10%;
+	background-color: inherit;
+	/*overflow: auto;*/
 }
 
 nav a{
 	padding:20px;
+	display: inline-block;
 	font-family: 'Oxygen', sans-serif;
 	text-transform: uppercase;
 	margin:0;
@@ -278,7 +281,6 @@ nav a:hover{
 	position: relative;
 	width: 100%;
 	display:inline-block;
-	cursor: pointer;
 	-webkit-transition: background 0.4s 0.5s;
 	-moz-transition: background 0.4s 0.5s;
 	-ms-transition: background 0.4s 0.5s;
@@ -336,7 +338,7 @@ nav a:hover{
 	background-color: rgba(236,104,89,.75);
 }
 
-#features .hex-contain a{
+#features .hex-contain p{
 	color: black;
 	text-transform: uppercase;
 	font-family: 'Oxygen';
@@ -347,7 +349,7 @@ nav a:hover{
   width: 15%;
   text-align: center;
   display: inline-block;
-  min-width: 107px;
+  min-width: 102px;
   padding: 2%;
 }
 
@@ -379,7 +381,7 @@ nav a:hover{
 	color: black;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 2500px) {
 	.wide {
 		display: none;
 	}
@@ -471,6 +473,7 @@ nav a:hover{
 
 .contact-cont{
 	text-align: center;
+	margin-top: 17vh;
 }
 
 .contact{
@@ -524,9 +527,11 @@ nav a:hover{
 	opacity: .8;
 }
 
-.grid nav{
+#footer nav{
 	color: #6D6E70;
 	font-size: 1.1em;
+	margin-right: 5%;
+	padding: 0;
 }
 
 footer{
@@ -545,9 +550,47 @@ footer a{
 	color: #BCBEC0;
 }
 
+@media (max-width: 1024px) and (min-width: 320px){
+	#footer{
+		padding: 3.5em 0 1em 0;
+		overflow: auto;
+	}
+
+	nav {
+		font-size: .9em
+	}
+
+	#footer nav{
+		float: none;
+	    padding: 0;
+	    margin: 0 10%;
+	    text-align: center;
+	}
+
+	#footer nav a{
+		padding: 0 20px;
+	}
+
+	.footer_social{
+		width:80%;
+		margin: 0 10% 2em;
+	}
+
+	.footer_social img{
+		width: 12%;
+	    padding: 0.4em 1.5em;
+	    -webkit-transition: all .5s ease-in-out;
+	    -moz-transition: all .5s ease-in-out;
+	    -ms-transition: all .5s ease-in-out;
+	    -o-transition: all .5s ease-in-out;
+	    transition: all .5s ease-in-out;
+	}
+}
+
 @media (max-width: 667px) and (min-width: 415px){
 	body{
-		background: url('img/poster.jpg') no-repeat 50% 0;
+		background: url('img/poster.jpg') no-repeat center;
+		background-size: cover;
 	}
 
 	.gun .cta{
@@ -561,7 +604,8 @@ footer a{
 
 @media (max-width: 414px) {
 	body{
-		background: url('img/poster.jpg') no-repeat 50% 0;
+		background: url('img/poster.jpg') no-repeat center;
+		background-size: cover;
 	}
 
 	#vid-section{
