@@ -215,7 +215,7 @@ nav a:hover{
 .triangle svg{
 	position: absolute;
 	bottom: 0;
-	fill:rgba(77,121,216, .75);
+	fill:white;
 }
 .page {
 	padding: 5em 0;
@@ -229,7 +229,13 @@ nav a:hover{
 /*******************************/
 #trusted-by{
 	background-color: white;
-	display: none;
+}
+
+#trusted-by img{
+	width: 15%;
+  	display: inline-block;
+  	min-width: 180px;
+  	padding: 4%;
 }
 
 /*******************************/
