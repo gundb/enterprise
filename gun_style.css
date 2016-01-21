@@ -232,10 +232,10 @@ nav a:hover{
 }
 
 #trusted-by img{
-	width: 12%;
+	width: 15%;
   	display: inline-block;
   	min-width: 100px;
-  	padding: 2%;
+  	padding: 4%;
 }
 
 .counter{
