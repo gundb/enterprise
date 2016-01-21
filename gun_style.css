@@ -232,10 +232,31 @@ nav a:hover{
 }
 
 #trusted-by img{
-	width: 15%;
+	width: 12%;
   	display: inline-block;
-  	min-width: 180px;
-  	padding: 4%;
+  	min-width: 100px;
+  	padding: 2%;
+}
+
+.counter{
+	color:#404040;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin-top: 2.5em;
+	margin-top: 0;
+}
+
+.counter h3{
+	font-size: 1.7em;
+	margin: 0;
+}
+
+.counter p{
+	font-size: 1em;
+	margin-top: 6px;
+	margin-bottom: 0;
+	color: #a0a0a0;
 }
 
 /*******************************/
@@ -601,6 +622,10 @@ footer a{
 		background-size: cover;
 	}
 
+	.counter {
+		font-size: 1.5em;
+	}
+
 	.gun .cta{
 		width: 48%;
 	}
@@ -614,6 +639,10 @@ footer a{
 	body{
 		background: url('img/poster.jpg') no-repeat center;
 		background-size: cover;
+	}
+
+	.counter {
+		font-size: 1.5em;
 	}
 
 	#vid-section{
