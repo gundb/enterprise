@@ -61,7 +61,7 @@ p{
 
 .poster{
 	position: fixed;
-	height: 100vh;
+	height: 110vh;
 	width: 100%;
 	z-index: -999;
 	top: 0;
