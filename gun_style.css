@@ -59,6 +59,20 @@ p{
 	transform:rotate(-90deg);
 }
 
+.poster{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: -999;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.poster img{
+	height: 100vh;
+}
+
 #vid-section{
 	background: #f1f1f1;
 	position: fixed;
@@ -595,6 +609,7 @@ footer a{
 /*******************************/
 
 @media (max-width: 1024px) and (min-width: 320px){
+
 	#footer{
 		padding: 3.5em 0 1em 0;
 		overflow: auto;
@@ -632,9 +647,9 @@ footer a{
 }
 
 @media (max-width: 667px) and (min-width: 415px){
-	body{
-		background: url('img/poster.jpg') no-repeat center;
-		background-size: cover;
+
+	.hex-contain a{
+		font-size: .88em;
 	}
 
 	.counter {
@@ -651,9 +666,8 @@ footer a{
 }
 
 @media (max-width: 414px) {
-	body{
-		background: url('img/poster.jpg') no-repeat center;
-		background-size: cover;
+	.hex-contain a{
+		font-size: .88em;
 	}
 
 	.counter {
