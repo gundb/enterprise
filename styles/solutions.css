@@ -1,0 +1,281 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+h1{
+	font-family: 'Alegreya Sans SC';
+	text-align: center;
+	margin-top: 2em;
+	font-size: 3em;
+	margin: .4em 0;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 1.2em;
+	font-family: 'Oxygen';
+	font-weight: 400;
+}
+
+hr{
+	border: 0;
+	height: .5px;
+	background-color: black;
+	margin-top: 0;
+	margin-bottom: 2.5em;
+}
+
+.red_header{
+	color: rgb(236,104,89);
+}
+
+.blue_header{
+	color: rgb(77,121,216);
+}
+
+.green_header{
+	color: rgb(122,216,133);
+}
+
+.yellow_header{
+	color: rgb(255,211,72);
+}
+
+#top_bar{
+	width: 100%;
+	height:auto;
+	position: relative;
+	padding: 1em 0 .8em 0;
+	overflow: auto;
+}
+
+#top_bar img{
+	width:5%;
+	position:relative;
+	left:46.5%;
+}
+
+.deep_red{
+	background-color: #BF534B;
+}
+
+.deep_blue{
+	background-color: #446FBC;
+}
+
+.deep_yellow{
+	background-color: #E5BA42;
+}
+
+.deep_green{
+	background-color: #6CBC72;
+}
+
+#icon_holder{
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	display:inline-block;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: static;
+	overflow: hidden;
+}
+
+.bg_holder{
+	background: url('../img/polygen.svg');
+}
+
+.white_logo{
+	width: 11%;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.red{
+	background-color: rgba(236,104,89,.9);
+}
+
+.blue{
+	background-color: rgb(77,121,216);
+}
+
+.yellow{
+	background-color: rgb(255,211,72);
+}
+
+.green{
+	background-color: rgb(122,216,133);
+}
+
+.hex-contain{
+  width: 20%;
+  display: inline-block;
+  padding: 5%;
+  min-width: 200px;
+  position: relative;
+}
+
+.hexagon img{
+	margin:15% 10%;
+	width: 80%;
+}
+
+.hexagon{
+	margin-bottom: 15px;
+	position: relative;
+	width: 100%;
+}
+
+.hexagon svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hexagon svg line{
+	stroke-width:3;
+	fill:none;
+	stroke:white;
+}
+
+.wrapper{
+	width:100%;
+}
+
+
+.content{
+	margin:0 auto;
+	width: 80%;
+}
+
+.content.blueStrong strong{
+	color: rgba(77,121,216, 1);
+}
+
+.content.yellowStrong strong{
+	color: #E1C247;
+}
+
+.content.redStrong strong{
+	color: rgb(236,104,89);
+}
+
+.content.greenStrong strong{
+	color: rgb(122,216,133);
+}
+
+.contact{
+	background-color: #323232;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding:1.3em 0;
+}
+
+.contact a{
+	font-family:'Oxygen';
+	font-size: 2.5em;
+	color:#4f4f4f;
+	text-transform: uppercase;
+}
+
+.next{
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	display:inline-block;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+}
+
+.next a{ color: white;}
+
+.next h2{
+	text-align: left;
+	font-family: 'Alegreya Sans SC';
+	margin-left: 1.4em;
+}
+
+.next .hex-contain{
+	width: 12%;
+}
+
+.next .hex-contain p{
+	font-size: .8em;
+}
+
+.next.blue{
+	background-color: rgb(77,121,216);
+}
+
+.next.yellow{
+	background-color: rgba(255,211,72,.9);
+}
+
+@media (min-width: 768px) and (max-width: 3000px){
+	#icon_holder{
+		width:40%;
+		height: 110vh;
+		position: fixed;
+	}
+
+	#icon_holder .hex-contain{
+		top:27vh;
+		width:30%;
+	}
+
+	#icon_holder p{
+		font-size: .9em;
+	}
+
+	.wrapper{
+		float: right;
+		width: 60%;
+	}
+
+	.next h2{
+		margin-bottom: 0;
+	}
+
+	.contact{
+		height: 5vh;
+	}
+
+	.next .hex-contain{
+		min-width: 150px;
+	}
+
+	.next .hex-contain p{
+		font-size: .7em;
+		letter-spacing: 0px;
+	}
+
+	.contact{
+		padding:10% 0;	
+	}
+
+/*	.stick{
+		position:fixed;
+		top: 0;
+	}*/
+
+	#footer{
+		background-color: #30302B;
+		height:310px;
+	}
+}

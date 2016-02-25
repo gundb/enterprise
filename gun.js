@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$(function(){
-		var c = ['dull', 'blue', 'green']
-		, a = 'dull blue red green', n = 0, to;
+		var c = ['dull', 'blue', 'green'], a = 'dull blue red green', n = 0, to;
 		$(".screen").click(function(){
 			c.push(c.shift());
 			to = to || c[0];
@@ -10,7 +9,7 @@ $(document).ready(function(){
 				var t = $(this); n++;
 				setTimeout(function(){
 					t.removeClass(a).addClass(to);
-					if(!(--n)){ to = null }
+					if(!(--n)){ to = null; }
 				}, rand(400,700));
 			});
 		});
@@ -61,4 +60,38 @@ $(document).ready(function(){
 			complete: function(){ show(true) }
 		});
 	});
+	// var windowSize = $(window).width();
+
+	// $(window).on('resize', function () {
+	// 	windowSize = $(this).width();
+	// });
+
+	// $(window).scroll(function () {
+	// 	if (windowSize < 768) {
+	// 		return;
+	// 	}
+	// 	var $iconPanel = $('#icon_holder');
+	// 	var $textPanel = $('.wrapper');
+	// 		var offset = $textPanel.offset().top;
+	// 		$(window).scroll(function(){
+	// 			var track = offset - $(window).scrollTop();
+	// 			console.log(track);
+	// 			if(track < 0){
+	// 				$iconPanel.addClass('stick');
+	// 				console.log('I\'m sticky now!');
+	// 			}
+	// 			else{
+	// 				$iconPanel.removeClass('stick');
+	// 				console.log('I\'m free!');
+	// 			}
+	// 		});
+	// });
 });
+
+
+
+
+
+
+
+
