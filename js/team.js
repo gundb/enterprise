@@ -4,7 +4,7 @@ var images = [
 	{
 		image:'../img/team/Alvaro.jpg',
 		teamName:'Alvaro Gomez',
-		paragraph:'Alvaro is from South America and has been living in Utah for the past 5 years, he is a very dedicated graphic designer but he also found a new passion in coding mainly JavaScript and JavaScript frameworks (Angular).\nAlvaro likes to travel, he’s been to several countries in America and Europe, where he fell in love of the different cultures, food and night life.',
+		paragraph:'Alvaro is from South America and has been living in Utah for the past 5 years, he is a very dedicated graphic designer but he also found a new passion in coding mainly JavaScript and JavaScript frameworks (Angular).\nAlvaro likes to travel, he\'s been to several countries in America and Europe, where he fell in love of the different cultures, food and night life.',
 		mail:'alvaro@gundb.io'
 	},
 	{
@@ -22,7 +22,7 @@ var images = [
 	{
 		image:'../img/team/Sean.jpg',
 		teamName: 'Sean Duncan',
-		paragraph: 'Sean is a digital immigrant, who decided in the spring of 2014 to make a career shift and become a Knight of the Noble Code.  He co-founded the SLC JS Learners group, expecting only a few people to be interested –was he in for a surprise!  He\'s ended up running a group with over 500 learners, and has become a peer mentor to his fellow Code Knights in training.  Before he started slaying code dragons and traveling the JavaScript realm, he researched how technology can be harnessed to improve human learning.',
+		paragraph: 'Sean is a digital immigrant, who decided in the spring of 2014 to make a career shift and become a Knight of the Noble Code.  He co-founded the SLC JS Learners group, expecting only a few people to be interested &ndash;was he in for a surprise!  He\'s ended up running a group with over 500 learners, and has become a peer mentor to his fellow Code Knights in training.  Before he started slaying code dragons and traveling the JavaScript realm, he researched how technology can be harnessed to improve human learning.',
 		mail:'sean@gundb.io'
 	}
 ];

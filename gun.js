@@ -60,32 +60,10 @@ $(document).ready(function(){
 			complete: function(){ show(true) }
 		});
 	});
-	// var windowSize = $(window).width();
-
-	// $(window).on('resize', function () {
-	// 	windowSize = $(this).width();
-	// });
-
-	// $(window).scroll(function () {
-	// 	if (windowSize < 768) {
-	// 		return;
-	// 	}
-	// 	var $iconPanel = $('#icon_holder');
-	// 	var $textPanel = $('.wrapper');
-	// 		var offset = $textPanel.offset().top;
-	// 		$(window).scroll(function(){
-	// 			var track = offset - $(window).scrollTop();
-	// 			console.log(track);
-	// 			if(track < 0){
-	// 				$iconPanel.addClass('stick');
-	// 				console.log('I\'m sticky now!');
-	// 			}
-	// 			else{
-	// 				$iconPanel.removeClass('stick');
-	// 				console.log('I\'m free!');
-	// 			}
-	// 		});
-	// });
+	var windowSize = $(window).width();
+	if(windowSize < 1025){
+		$('#vid-section').remove();
+	}
 });
 
 
