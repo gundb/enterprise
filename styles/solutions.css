@@ -50,7 +50,7 @@ hr{
 }
 
 .red_header{
-	color: rgb(236,104,89);
+	color: #ea3224;
 }
 
 .blue_header{
@@ -58,11 +58,11 @@ hr{
 }
 
 .green_header{
-	color: rgb(122,216,133);
+	color: #33cc33;
 }
 
 .yellow_header{
-	color: rgb(255,211,72);
+	color: #f2b919;
 }
 
 #top_bar{
@@ -113,7 +113,7 @@ hr{
 }
 
 .red{
-	background-color: rgba(236,104,89,.9);
+	background-color: #ea3224;
 }
 
 .blue{
@@ -121,11 +121,11 @@ hr{
 }
 
 .yellow{
-	background-color: rgb(255,211,72);
+	background-color: #f2b919;
 }
 
 .green{
-	background-color: rgb(122,216,133);
+	background-color: #33cc33;
 }
 
 .hex-contain{

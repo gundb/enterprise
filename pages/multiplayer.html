@@ -28,16 +28,20 @@
 	<div class="wrapper">
 		<div class="content greenStrong">
 			<a href="../index.html"><div class="logoBtn yellow"><img src="../img/gun_logo_white.svg"></div></a>
-			<h1 class="yellow_header">Neque porro quisquam, consectetur, adipisci velit...</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at dolor at mi fringilla tincidunt. Nullam vel rutrum ex, in ornare ligula. Nam eget vehicula libero, eu placerat ante. Vivamus malesuada, quam eget lobortis ultricies, orci est convallis <strong>ipsum</strong>, id aliquam eros diam eget magna. Curabitur ullamcorper diam ac urna porttitor vulputate. Phasellus et enim a nulla pulvinar viverra. Praesent est tellus, porttitor non metus euismod, egestas fermentum tellus. In iaculis diam vel condimentum iaculis. Etiam non ex ac augue imperdiet varius quis et felis. Proin sodales suscipit justo, ac lacinia ligula pretium nec. Nullam lacinia justo vitae augue pharetra aliquam.</p>
+			<h1 class="yellow_header">Trace Game</h1>
+			<p>As the web becomes a more collaborative place, apps are increasingly expected to have realtime features, and online gaming is certainly no exception. This can quickly become complicated, since games don't always fall into simple document, table, or key-value data formats, and trying to merge that data across peers can become troublesome. If merges aren't handled just right, game state can differ from each player, causing inconsistent user experience and gameplay bugs that are difficult to track down.</p>
 
-			<img src="http://www.deluxevectors.com/images/sample/cool-world-map-vector.jpg">
+			<p>GUN handles the merge problems behind the scenes, and syncs your game state between the other players handling the merge for you, letting you focus on the game itself.</p>
 
-			<p>Sed ac nisi efficitur, volutpat nulla a, iaculis purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur dignissim dignissim facilisis. Etiam id elit libero. Sed nec placerat diam, ac rhoncus diam. <strong>Quisque nibh odio, suscipit id gravida et</strong>, tempor id lectus. Proin bibendum magna augue. Vestibulum tincidunt nec mauris eget consequat. Aliquam facilisis ex eu ligula accumsan, in consequat tortor tempus. Suspendisse sollicitudin arcu nunc, non fringilla elit mattis sit amet. Phasellus eu tempor felis.</p>
+			<img src="../img/trace_game.png">
+
+			<p>One of our published GUN apps is a realtime game with mechanics similar to Tron. Several different components of the game are synced between the clients and server, such as the waiting room, game board, and the player positions. Each player is rendered onto the screen from GUN's state, and when a player turns or collides, it puts an update into gunDB, which updates every players' state and their view. Adding an invincibility feature to the game was as easy as telling gun whether your player was invincible, adding a one-line exception to collision detection, and adding a color to invincible players. Now every player can see who not to mess with, and all in realtime.</p>
+
+			<p>Even though most of the fun happens on the clients, servers aren't left out of the picture. Since gun works the same on both browsers and servers alike, certain aspects are handled centrally, such as the waiting room, and  inactive players. When a player joins, they push themselves to a list of waiting players. If a spot opens up in the game, the server chooses the next to take their place.</p>
 		</div>
 		<div id="footer">
 			<div class="next green">
-				<a href="collaborative.html"><h2>Next article <i class="fa fa-arrow-right"></i></h2></a>
+				<h2>Next article <i class="fa fa-arrow-right"></i></h2>
 				<div class="hex-contain">
 					<div class="hexagon">
 						<svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.81 295.39">
