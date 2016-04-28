@@ -72,37 +72,20 @@ h3{
 	margin-bottom: 6em;
 }
 
-/*.va-wrapper{
-	width:100%;
-	height:100%;
-	position:relative;
-	overflow:hidden;
-	background-color: white;
+.contactUs{
+	border: 2px solid black;
+	width: 30%;
+	padding:2em;
+	box-sizing: border-box;
+	text-align: center;
+	margin:0 auto 5em;
 }
 
-.va-slice{
-	cursor:pointer;
-	position:absolute;
-	width:100%;
-	left:0px;
-	overflow:scroll;
+.contactUs a{
+	text-transform: uppercase;
+	color: black;
+	font-size: 2em;
 }
-
-.va-title{
-	text-transform:uppercase;
-	font-size:2em;
-	margin-left:20px;
-}
-
-.va-content{
-	width:80%;
-	display: none;
-	margin:0 auto;
-}
-
-.va-slice p{
-	font-size: 1.5em;
-}*/
 
 #footer{
 	background-color: #323232;
