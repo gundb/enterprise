@@ -38,6 +38,16 @@
 			<p>One of our published GUN apps is a realtime game with mechanics similar to Tron. Several different components of the game are synced between the clients and server, such as the waiting room, game board, and the player positions. Each player is rendered onto the screen from GUN's state, and when a player turns or collides, it puts an update into gunDB, which updates every players' state and their view. Adding an invincibility feature to the game was as easy as telling gun whether your player was invincible, adding a one-line exception to collision detection, and adding a color to invincible players. Now every player can see who not to mess with, and all in realtime.</p>
 
 			<p>Even though most of the fun happens on the clients, servers aren't left out of the picture. Since gun works the same on both browsers and servers alike, certain aspects are handled centrally, such as the waiting room, and  inactive players. When a player joins, they push themselves to a list of waiting players. If a spot opens up in the game, the server chooses the next to take their place.</p>
+			<h1 class="yellow_header">Connect 4</h1>
+			<p>High speed games aren't the only games that benefit from real time data. Consider turn-based games: some parts of the game are slow moving, and some parts are fast (pondering a move for a while, or seeing a perfect opening and launching for it). Users don't want to wonder "Should I refresh? Are the turns actually updating?" by providing users with lightning-fast updates, they can focus on what really matters: the game.</p>
+
+			<p>We built a turn-based demo you can try based off Connect-4 (<a class="green_header" href="https://en.wikipedia.org/wiki/Connect_Four">Wikipedia Connect 4</a>). Try it with a coworker across the room, or friends in another state - the updates should happen at the speed of life.</p>
+
+			<a class="green_header" href="http://C4.gunDB.io">Click here to play</a>
+
+			<img src="../img/c4game.png" style="margin-top:2em">
+
+			<p>If you want real time updates in your app, give gun a shot and let us know how it works for you!</p>
 		</div>
 		<div id="footer">
 			<div class="next green">
