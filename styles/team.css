@@ -210,6 +210,9 @@ footer p{
 	padding: .2em;
     box-sizing: border-box;
     color: #6D6E70;
+    font-family: 'Oxygen';
+    text-align: left;
+    margin-left: 1.5em;
 }
 
 footer a{
