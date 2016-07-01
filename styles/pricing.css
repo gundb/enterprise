@@ -15,6 +15,80 @@ img{
 	width: 100%;
 }
 
+.poster{
+	display: none;
+}
+
+
+#vid-section{
+	background: #f1f1f1;
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+	z-index: -100;
+	top: 0;
+	width: 100%;
+}
+
+#vid-section video{
+	width:100%;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9){
+	#vid-section video{
+		width:100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#vid-section video{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.header{
+	width: 100%;
+	height: 30em;
+	overflow: hidden;
+	padding:.5em 0;
+	text-align: center;
+	position: relative;
+}
+
+.top{
+	width: 80%;
+	margin:1.5em auto 1em;
+	color: white;
+	text-transform: uppercase;
+}
+
+.header a{
+	display: inline-block;
+}
+
+.header img{
+	width: 80%;
+}
+
+.title{
+	position: relative;
+	z-index: 1
+}
+
+.panelbg{
+	position: absolute;
+	width: 100%;
+	height:30em;
+	bottom: 0;
+}
+
+.red{
+	background-color: rgba(234,50,36, .8)
+}
+
 h1{
 	font-size: 4em;
 	font-weight: 300;
@@ -32,7 +106,7 @@ h3{
 }
 
 .wrapper{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -52,6 +126,72 @@ h3{
 	font-family: 'Oxygen';
 }
 
+.va-content{
+	text-align: center;
+	width: 100%;
+}
+
+.va-content p{
+	text-align: left;
+}
+
+.grid{
+	width: 33.4%;
+    margin: -2.3px;
+	min-width: 280px;
+	height: auto;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.info{
+	width: 100%;
+	height: auto;
+	color: white
+}
+
+.infoTitle{
+	padding: 1em 0.4em 0em;
+	font-size: 2em;
+	height: auto;
+	color: white;
+}
+
+.infoContent{
+	padding: 1em;
+    height: 300px;
+    line-height: 2;
+}
+
+.infoContent ul{
+	text-align: left;
+}
+
+.infoPrice{
+	font-size: 1.9em;
+    padding: 0.5em;
+    height: 113px;
+}
+
+
+.blue {
+	background-color: rgb(77,121,216);
+}
+
+.blue_bg{
+	background-color: rgba(77,121,216,.8);	
+}
+
+.green {
+	background-color: rgba(51,204,51,.8);
+}
+
+.yellow {
+	background-color: rgba(242,185,25,.8);
+}
+
 .home{
 	width: 50%;
 	min-width: 300px;
@@ -69,7 +209,10 @@ h3{
 }
 
 #va-accordion{
-	margin-bottom: 6em;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	overflow: auto;
 }
 
 .contactUs{
@@ -78,7 +221,7 @@ h3{
 	padding:2em;
 	box-sizing: border-box;
 	text-align: center;
-	margin:0 auto 5em;
+	margin:5em auto;
 }
 
 .contactUs a{
@@ -202,6 +345,129 @@ footer a{
 
 	footer a{
 		color: #BCBEC0;
+	}
+}
+
+@media (max-width: 736px) and (min-width: 320px) and (orientation: portrait){
+	#vid-section{
+		display: none;
+	}
+
+	.grid{
+		width: 100%;
+		margin: 0;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+
+	.contactUs{
+		width: 58%;
+	    padding: 1.2em;
+	}
+}
+
+@media (max-width: 736px) and (min-width: 320px) and (orientation: landscape){
+	#vid-section{
+		display: none;
+	}
+
+	.grid{
+		width:100%;
+		margin:0;
+	}
+
+	.infoContent{
+		height: 220px;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait){
+	.grid{
+		width: 100%;
+		margin: 0;
+	}
+
+	.infoContent{
+		height: 240px;
+	}
+
+	#vid-section{
+		display: none;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+
+
+
+	.contactUs{
+		width: 40%;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape){
+	#vid-section{
+		display: none;
+	}
+
+	.infoContent{
+		height: 440px;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
 	}
 }
 
