@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUN - Fast Performance</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/solutions.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="icon_holder" class="red">
+		<div class="hex-contain">
+			<div class="hexagon">
+				<svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.81 295.39">
+					<line class="bottom-right" x1="128.41" y1="293.67" x2="254.82" y2="220.68"/>
+					<line class="right" x1="254.82" y1="74.71" x2="254.82" y2="221.7"/>
+					<line class="top-right" x1="128.41" y1="1.72" x2="254.82" y2="74.71"/>
+					<line class="top-left" x1="1.99" y1="74.71" x2="128.41" y2="1.72"/>
+					<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
+					<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
+				</svg>
+				<img class="icon" src="../../img/icons/fast_white.svg">
+			</div>
+			<p>fast</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content greenStrong">
+			<a href="../../index.html"><div class="logoBtn red"><img src="../../img/gun_logo_white.svg"></div></a>
+			<h1 class="red_header">Performance</h1>
+			<p>Here are the performance results from different devices:</p>
+
+			<ul>
+				<li>Android phone,<b> ~5M ops/sec.</b></li>
+				<li>Macbook Air,<b> Chrome, ~30M ops/sec.</b></li>
+				<li>Macbook Pro,<b> Chrome Canary, ~80M ops/sec.</b></li>
+			</ul>
+
+			<h2>How did we accomplish 100,000 ops/sec in IE6?</h2>
+
+			<p>This test ran on the cheapest Windows laptop I could find on the market. A $150 2GB Atom CPU which I loaded up with IETester to do some performance benchmarking. Getting these numbers has been hard work. For those who want the real answer, check out our Read the Source podcast:</p>
+
+			<a href="https://www.youtube.com/watch?v=70dn1oZQFCk" target="_blank"><img src="../../img/fast_link.jpeg"></a>
+
+			<p>For those who want the short summary:</p>
+
+			<ul>
+				<li>Use PTSD (Performance Testing Speed Development) to micro-optimize your code without getting lost in micro-optimizations. More on PTSD to come in the future.</li>
+				<li>Reduce function calls and prioritize hot code paths as the first if statements.</li>
+				<li>Do work only once, then use centralized caching and cache updating to skip ever doing work again.</li>
+			</ul>
+
+			<p>Resulting caveats:</p>
+
+			<ul>
+				<li>These performance benchmarks rarely have cache misses, but many other database benchmarks do the same. Measuring disk I/O isn't very interesting.</li>
+				<li>Take all performance testing benchmarks with a huge grain of salt. That is why we're working on panic, a distributed testing runner.</li>
+			</ul>
+
+		</div>
+		<!-- <div id="footer">
+			<div class="next green">
+				<h2>Next article <i class="fa fa-arrow-right"></i></h2>
+				<div class="hex-contain">
+					<div class="hexagon">
+						<svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.81 295.39">
+							<line class="bottom-right" x1="128.41" y1="293.67" x2="254.82" y2="220.68"/>
+							<line class="right" x1="254.82" y1="74.71" x2="254.82" y2="221.7"/>
+							<line class="top-right" x1="128.41" y1="1.72" x2="254.82" y2="74.71"/>
+							<line class="top-left" x1="1.99" y1="74.71" x2="128.41" y2="1.72"/>
+							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
+							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
+						</svg>
+						<img src="../img/icons/collaborative.svg">
+					</div>
+					<p>Collaborative Apps</p>
+				</div>	
+			</div> -->
+			<div class="contact">
+				<a href="mailto:enterprise@gundb.io?Multiplayer Games">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../gun.js"></script>
+</body>
+</html>

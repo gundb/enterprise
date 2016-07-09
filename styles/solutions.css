@@ -22,7 +22,12 @@ h1{
 	text-transform: uppercase;
 }
 
-p{
+h2{
+	font-family: 'Alegreya Sans SC';
+	font-size: 1.9em;
+}
+
+p, ul{
 	font-size: 1.2em;
 	font-family: 'Oxygen';
 	font-weight: 400;
@@ -142,6 +147,10 @@ hr{
 .hexagon img{
 	margin:15% 10%;
 	width: 80%;
+}
+
+.icon{
+	transform: scale(.8, .8);
 }
 
 .hexagon{
