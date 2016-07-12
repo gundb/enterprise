@@ -51,7 +51,7 @@ img{
 
 .header{
 	width: 100%;
-	height: 30em;
+	height: 22em;
 	overflow: hidden;
 	padding:.5em 0;
 	text-align: center;
@@ -60,7 +60,7 @@ img{
 
 .top{
 	width: 80%;
-	margin:1.5em auto 1em;
+	margin:0.5em auto 0.4em;
 	color: white;
 	text-transform: uppercase;
 }
@@ -81,7 +81,7 @@ img{
 .panelbg{
 	position: absolute;
 	width: 100%;
-	height:30em;
+	height:22em;
 	bottom: 0;
 }
 
