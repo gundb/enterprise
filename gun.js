@@ -64,6 +64,49 @@ $(document).ready(function(){
 	if(windowSize < 1025){
 		$('#vid-section').remove();
 	}
+
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	var player;
+
+	function onYouTubeIframeAPIReady(){
+		console.log('this is working');
+		player = new YT.Player('iframeVid', {
+			// events:{
+			// 	'onReady':onPlayerReady,
+			// 	'onStateChange':onPlayerStateChange
+			// }
+		});
+	}
+
+	var $blackScreen = $('.black_screen');
+
+	$('.play_btn').hover(function(){
+		$('.hollow').fadeToggle();
+		$('.full').fadeToggle();
+	});
+
+	// function onPlayerReady(event){
+	// 	player.playVideo();
+	// }
+	$('.play_btn').click(function(){
+		$blackScreen.fadeIn();
+		var vid = $('.iframeVid').clone(true,true);
+		vid.show().appendTo($('.iframeVid').parent());
+		vid.attr('id', 'iframeVid').attr('src', 'https://www.youtube.com/embed/F1GB8P6_gVo?enablejsapi=1&rel=0&autoplay=1');
+		// onPlayerReady();
+	});
+
+	// function onPlayerStateChange(event){ 
+	// 	player.stopVideo();
+	// }
+		$('.close').click(function(){
+			$blackScreen.fadeOut();
+			$('#iframeVid').remove();
+			// onPlayerStateChange();
+		});
 });
 
 

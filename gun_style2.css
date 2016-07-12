@@ -10,6 +10,7 @@ a{
 
 img{
 	width: 100%;
+	height: auto;
 }
 
 h1{
@@ -95,6 +96,32 @@ p{
 }
 
 /*******************************/
+/*        Balck Screen         */
+/*******************************/
+
+.black_screen{
+	width: 100%;
+	height: 100vh;
+	background-color: #282828;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+
+.close{
+	width: 3%;
+	position: absolute;
+	top:2%;
+	right: 2%;
+}
+
+#iframeVid{
+	width: 80%;
+	height: 70%;
+	margin:7% 10%;
+}
+
+/*******************************/
 /*    Intro and Gun title      */
 /*******************************/
 
@@ -138,14 +165,28 @@ nav a:hover{
 	color:white;
 }
 
+.play_btn{
+    position: absolute;
+    width: 11%;
+    top: 37%;
+    left: 10%;
+    cursor:pointer;
+}
+
+.hollow{
+	position:absolute;
+}
+
+.full{
+	display: none;
+}
+
 .gun { 
 	width: 60%;
 	position: relative;
 	float: right;
 	margin: 5% 10%;
 }
-
-
 
 .gun h2{
 	font-size: 2.2em;
@@ -426,42 +467,34 @@ nav a:hover{
 	}
 }
 
-.graphic{
-	min-width: 300px; 
-	max-width: 600px; 
-	height: 400px; 
-	position: relative; 
-	margin:0 auto; 
-	padding:0;
-}
-
-.screen {
+.devices{
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
 	position: relative;
-	overflow: hidden;
 }
 
-.desktop{
-    height: 10em;
-    width: 17em;
-    position: absolute;
-    top: 36%;
-    left: 3%;
+.device{
+	position: relative;
+	display: inline-block;
 }
 
-.laptop{
-	height: 7em;
-	width: 12em; 
-	position: absolute; 
-	top: 60%; 
-	left: 48%;
+#phone{
+	left:5%;
+	bottom: 0;
+	width: 5%;
 }
 
-.phone{
-	height: 3.75em; 
-	width: 2.25em; 
-	position: absolute; 
-	top: 35%; 
-	left: 70%;
+#tablet{
+	left:13%;
+	bottom: 0;
+	width: 10%;
+}
+
+#desktop{
+	bottom: 0;
+	width: 31%;
+	left:20%;
 }
 
 .mouse {
@@ -471,14 +504,20 @@ nav a:hover{
 	top: 60%;
 	left: -6%;
 }
-.svg {
-	background: white url('./dep/img/devices.svg') no-repeat 50% 50%;
-	height: 40em;
+
+#laptop{
+	bottom: 0;
+	right: -24%;
+	width: 25%;
 }
-.GUN {
-	background: transparent url('img/gun.svg') no-repeat 50% 50%;
-	background-size: 60%;
+
+.screen{
+	fill:#383838;
+	cursor: pointer;
+	-webkit-transition: all 1s;
+	overflow: hidden;
 }
+
 .dull {
 	background-color: #EEE;
 	-webkit-transition: background-color 600ms linear;
