@@ -15,6 +15,10 @@ img{
 	width: 100%;
 }
 
+strong{
+	font-size: 3em;
+}
+
 .poster{
 	display: none;
 }
@@ -161,7 +165,7 @@ h3{
 
 .infoContent{
 	padding: 1em;
-    height: 300px;
+    height: 160px;
     line-height: 2;
 }
 
@@ -172,7 +176,7 @@ h3{
 .infoPrice{
 	font-size: 1.9em;
     padding: 0.5em;
-    height: 113px;
+    height: 210px;
 }
 
 
@@ -216,18 +220,18 @@ h3{
 }
 
 .contactUs{
-	border: 2px solid black;
-	width: 30%;
-	padding:2em;
+	border: 2px solid white;
+	width: 50%;
+	padding:1.2em;
 	box-sizing: border-box;
 	text-align: center;
-	margin:5em auto;
+	margin:2em auto 1em;
 }
 
 .contactUs a{
 	text-transform: uppercase;
-	color: black;
-	font-size: 2em;
+	color: white;
+	font-size: 1.4em;
 }
 
 #footer{
