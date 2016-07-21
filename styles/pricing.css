@@ -171,12 +171,13 @@ h3{
 
 .infoContent ul{
 	text-align: left;
+	font-size: 1.3em;
 }
 
 .infoPrice{
 	font-size: 1.9em;
     padding: 0.5em;
-    height: 210px;
+    height: 215px;
 }
 
 
