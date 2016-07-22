@@ -69,17 +69,14 @@ strong{
 	text-transform: uppercase;
 }
 
-.header a{
-	display: inline-block;
-}
-
-.header img{
-	width: 53%;
-}
-
 .title{
+	width:100%;
 	position: relative;
 	z-index: 1
+}
+
+.title img{
+	width: 16%;
 }
 
 .panelbg{
@@ -381,6 +378,10 @@ footer a{
 	.contactUs{
 		width: 58%;
 	    padding: 1.2em;
+	}
+
+	strong{
+		font-size: 2.3em;
 	}
 }
 
