@@ -224,12 +224,17 @@ h3{
 	box-sizing: border-box;
 	text-align: center;
 	margin:2em auto 1em;
+	background-color: rgba(0,0,0,0);
+	font-size: 1.1em;
+	color: white;
+	text-transform:uppercase;
+	cursor: pointer;
 }
 
 .contactUs a{
 	text-transform: uppercase;
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
 
 #footer{
