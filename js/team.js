@@ -36,7 +36,7 @@ $(document).ready(function(){
 			var picParagraph = images[i].paragraph;
 			var picMail = images[i].mail;
 			if(picMatch===picboxSrc){
-				$('#currentImg, #name, #bio').remove();
+				$('#currentImg, #name, #bio, #mail').remove();
 				$('<img id="currentImg" src="' + images[i].image + '"/>').appendTo('#display');
 				$('<span id="name">' + picteamName + '</span>').appendTo('h1');
 				$('<span id="bio">'+picParagraph+'</span>').appendTo('.canvas_content p');

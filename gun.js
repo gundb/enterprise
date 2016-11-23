@@ -88,25 +88,18 @@ $(document).ready(function(){
 		$('.full').fadeToggle();
 	});
 
-	// function onPlayerReady(event){
-	// 	player.playVideo();
-	// }
 	$('.play_btn').click(function(){
 		$blackScreen.fadeIn();
 		var vid = $('.iframeVid').clone(true,true);
 		vid.show().appendTo($('.iframeVid').parent());
 		vid.attr('id', 'iframeVid').attr('src', 'https://www.youtube.com/embed/F1GB8P6_gVo?enablejsapi=1&rel=0&autoplay=1');
-		// onPlayerReady();
 	});
 
-	// function onPlayerStateChange(event){ 
-	// 	player.stopVideo();
-	// }
-		$('.close').click(function(){
-			$blackScreen.fadeOut();
-			$('#iframeVid').remove();
-			// onPlayerStateChange();
-		});
+	$('.close').click(function(){
+		$blackScreen.fadeOut();
+		$('#iframeVid').remove();
+		// onPlayerStateChange();
+	});
 });
 
 
