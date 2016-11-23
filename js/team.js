@@ -51,7 +51,7 @@ $(document).ready(function(){
 	$('#close').click(function(){
 		$('html, body').animate({scrollTop: $('.team .pictures').offset().top},'slow');
 		$('.canvas').slideUp('slow').addClass('.hide');
-		$('#currentImg, #name, #bio, #mail, #amail').remove();
+		$('#currentImg, #name, #bio, #mail').remove();
 	});
 	$('#next').click(function(){
 		a++;
