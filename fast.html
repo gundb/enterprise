@@ -35,27 +35,28 @@
 				<li>Android phone,<b> ~5M ops/sec.</b></li>
 				<li>Macbook Air,<b> Chrome, ~30M ops/sec.</b></li>
 				<li>Macbook Pro,<b> Chrome Canary, ~80M ops/sec.</b></li>
+				<li>Lenovo netbook,<b> IE6, ~100K ops/sec.</b></li>
 			</ul>
 
 			<h2>How did we accomplish 100,000 ops/sec in IE6?</h2>
 
-			<p>This test ran on the cheapest Windows laptop I could find on the market. A $150 2GB Atom CPU which I loaded up with IETester to do some performance benchmarking. Getting these numbers has been hard work. For those who want the real answer, check out our Read the Source podcast:</p>
+			<p>This test ran on the cheapest Windows laptop available on the market. A $150 2GB Atom CPU which was loaded up with IETester to do some performance benchmarking. These numbers represent a breakthrough in performance not possible with other databases. A technical deep dive is highlighted on the Read the Source podcast:</p>
 
 			<a href="https://www.youtube.com/watch?v=70dn1oZQFCk" target="_blank"><img src="img/fast_link.jpeg"></a>
-
+			
 			<p>For those who want the short summary:</p>
 
 			<ul>
-				<li>Use PTSD (Performance Testing Speed Development) to micro-optimize your code without getting lost in micro-optimizations. More on PTSD to come in the future.</li>
+				<li>Use PTSD (Performance Testing Speed Development, like TDD) to micro-optimize your code without getting lost in micro-optimizations. This <a href="https://youtu.be/BEqH-oZ4UXI" target="_blank">tech talk</a> is a must watch.</li>
 				<li>Reduce function calls and prioritize hot code paths as the first if statements.</li>
-				<li>Do work only once, then use centralized caching and cache updating to skip ever doing work again.</li>
+				<li>Do work only once, and then use centralized in-memory caching and cache updating to skip ever doing any work again.</li>
 			</ul>
 
 			<p>Resulting caveats:</p>
 
 			<ul>
-				<li>These performance benchmarks rarely have cache misses, but many other database benchmarks do the same. Measuring disk I/O isn't very interesting.</li>
-				<li>Take all performance testing benchmarks with a huge grain of salt. That is why we're working on panic, a distributed testing runner.</li>
+				<li>These performance benchmarks rarely have cache misses, but replicates other database benchmarks which do the same. Measuring disk I/O is not very interesting.</li>
+				<li>Take all performance testing benchmarks with a huge grain of salt. That is why GUN has built <a href="http://gun.js.org/panic/">PANIC</a>, a distributed testing framework.</li>
 			</ul>
 
 		</div>
