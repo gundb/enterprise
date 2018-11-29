@@ -1,0 +1,490 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+strong{
+	font-size: 3em;
+}
+
+.poster{
+	display: none;
+}
+
+
+#vid-section{
+	background: #f1f1f1;
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+	z-index: -100;
+	top: 0;
+	width: 100%;
+}
+
+#vid-section video{
+	width:100%;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9){
+	#vid-section video{
+		width:100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#vid-section video{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.header{
+	width: 100%;
+	height: 16em;
+	overflow: hidden;
+	padding:.5em 0;
+	text-align: center;
+	position: relative;
+}
+
+.top{
+	width: 80%;
+	margin:0.5em auto 0.4em;
+	color: white;
+	text-transform: uppercase;
+}
+
+.title{
+	width:100%;
+	position: relative;
+	z-index: 1
+}
+
+.title img{
+	width: 16%;
+}
+
+.panelbg{
+	position: absolute;
+	width: 100%;
+	height:16em;
+	bottom: 0;
+}
+
+.red{
+	background-color: rgba(234,50,36, .8)
+}
+
+h1{
+	font-size: 3.2em;
+	font-weight: 300;
+	text-align: center;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 2em;
+}
+
+h3{
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+.wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.wrapper img{
+	width: 10%;
+	max-width: 60px;
+	margin-right: 1.5em;
+	float: left;
+
+}
+
+.wrapper p{
+	line-height: 1.5;
+}
+
+.oxygen{
+	font-family: 'Oxygen';
+}
+
+.va-content{
+	text-align: center;
+	width: 100%;
+}
+
+.va-content p{
+	text-align: left;
+}
+
+.grid{
+	width: 33.4%;
+    margin: -2.3px;
+	min-width: 280px;
+	height: auto;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.info{
+	width: 100%;
+	height: auto;
+	color: white
+}
+
+.infoTitle{
+	padding: 1em 0.4em 0em;
+	font-size: 2em;
+	height: auto;
+	color: white;
+}
+
+.infoContent{
+	padding: 1em;
+    height: 160px;
+    line-height: 2;
+}
+
+.infoContent ul{
+	text-align: left;
+	font-size: 1.3em;
+}
+
+.infoPrice{
+	font-size: 1.9em;
+    padding: 0.5em;
+    height: 215px;
+}
+
+
+.blue {
+	background-color: rgb(77,121,216);
+}
+
+.blue_bg{
+	background-color: rgba(77,121,216,.8);	
+}
+
+.green {
+	background-color: rgba(51,204,51,.8);
+}
+
+.yellow {
+	background-color: rgba(242,185,25,.8);
+}
+
+.home{
+	width: 50%;
+	min-width: 300px;
+	margin:1.5em 25% 1.8em 25%;
+}
+
+.title_holder{
+	width: 90%;
+	height: auto;
+	margin-bottom: 2.5em;
+}
+
+.title_holder h3{
+	vertical-align: middle;
+}
+
+#va-accordion{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	overflow: auto;
+}
+
+.contactUs{
+	border: 2px solid white;
+	width: 50%;
+	padding:1.2em;
+	box-sizing: border-box;
+	text-align: center;
+	margin:2em auto 1em;
+	background-color: rgba(0,0,0,0);
+	font-size: 1.1em;
+	color: white;
+	text-transform:uppercase;
+	cursor: pointer;
+}
+
+.contactUs a{
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.1em;
+}
+
+#footer{
+	background-color: #323232;
+	padding: 3.5em 0 1em 0;
+	overflow: auto;
+}
+
+nav {
+	font-size: .9em
+}
+
+#footer nav{
+	float: none;
+    padding: 0;
+    margin: 0 10%;
+    text-align: center;
+}
+
+#footer nav a{
+	padding: 0 .8em;
+	color: #6D6E71;
+	text-transform: uppercase;
+}
+
+.footer_social{
+	width:80%;
+	margin: 0 10%;
+}
+
+.footer_social .grid{
+	display: inline-block;
+	width: 100%;
+}
+
+.container{
+	text-align: center;
+}
+
+.footer_social img{
+	width: 12%;
+    padding: 0.4em 1.1em;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+footer{
+	background-color: #2C2C27;
+	padding: 1em 0;
+}
+
+footer .container{
+	color: white;
+}
+
+footer p{
+	margin: 0;
+	padding: .2em;
+    box-sizing: border-box;
+    color: #6D6E70;
+}
+
+footer a{
+		color: #BCBEC0;
+}
+
+
+@media (min-width: 1200px){
+	.home{
+		width: 20%;
+		margin: 1em 40%;
+	}
+
+	.footer_social{
+		float: left;
+	    margin-right: 3em;
+	    width: 16em;
+	}
+
+	.footer_social img{
+		width: 17%;
+		padding:.4em;
+		-webkit-transition:all .5s ease-in-out;
+		-moz-transition:all .5s ease-in-out;
+		-ms-transition:all .5s ease-in-out;
+		-o-transition:all .5s ease-in-out;
+		transition:all .5s ease-in-out;
+	}
+
+	.footer_social img:hover{
+		opacity: .8;
+	}
+
+	#footer nav{
+		color: #6D6E70;
+		font-size: 1.1em;
+		margin-right: 5%;
+		padding: 0;
+	}
+
+	footer{
+		width: 100%;
+		padding:.8em 0;
+		background-color: #2C2C27;
+		clear: both;
+	}
+
+	footer p{
+		color: #6D6E70;
+		font-size: .8em;
+	}
+
+	footer a{
+		color: #BCBEC0;
+	}
+}
+
+@media (max-width: 736px) and (min-width: 320px) and (orientation: portrait){
+	#vid-section{
+		display: none;
+	}
+
+	.grid{
+		width: 100%;
+		margin: 0;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+
+	.contactUs{
+		width: 58%;
+	    padding: 1.2em;
+	}
+
+	strong{
+		font-size: 2.3em;
+	}
+}
+
+@media (max-width: 736px) and (min-width: 320px) and (orientation: landscape){
+	#vid-section{
+		display: none;
+	}
+
+	.grid{
+		width:100%;
+		margin:0;
+	}
+
+	.infoContent{
+		height: 220px;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait){
+	.grid{
+		width: 100%;
+		margin: 0;
+	}
+
+	.infoContent{
+		height: 240px;
+	}
+
+	#vid-section{
+		display: none;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+
+
+
+	.contactUs{
+		width: 40%;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape){
+	#vid-section{
+		display: none;
+	}
+
+	.infoContent{
+		height: 440px;
+	}
+
+	.poster{
+		display: block;
+		position: fixed;
+		height: 110vh;
+		width: 100%;
+		z-index: -999;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	.poster img{
+		height: 100vh;
+	}
+}
+
+
+
+
+
+
+

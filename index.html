@@ -3,14 +3,17 @@
 <head>
 	<title>GUN</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="gun_style.css">
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href="gun_style.css"> -->
+	<link rel="stylesheet" type="text/css" href="gun_style2.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800italic' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
 </head>
 <body>
+	<div class="poster"><img src="img/bg_img.png"></div>
 	<div id="vid-section">
 		<video autoplay loop poster="img/bg_img.png" id="bgvid" width="100%">
 			<source src="video/bg_video.mp4" type="video/mp4">
@@ -19,27 +22,48 @@
 		</video>
 	</div>
 	<div id="intro">
+		<div class="black_screen">
+			<img class="close" src="img/close.svg">
+			<iframe class="iframeVid" style="display: none;"></iframe>
+		</div>
 		<nav>
 			<a href="http://gun.js.org/" target="_blank">Get Started</a>
-			<a href="https://github.com/amark/gun/wiki/JS-API" target="_blank">Documentation</a>
+			<a href="http://gun.js.org/docs" target="_blank">Documentation</a>
 			<a href="http://gun.js.org/think.html">Tutorials</a>
 			<a href="https://github.com/amark/gun">Download</a>
 		</nav>
+		<div class="play_btn">
+			<img class="hollow" src="img/play-01.svg">
+			<img class="full" src="img/play-02.svg">
+		</div>
 		<div class="gun">
 			<h2>Synchronize information faster than bullets can fly.</h2>
 			<p>We live in an era where data has become the life blood of the digital world. Customers now expect your services to seamlessly flow data between their devices. This demand requires systems that can scale at the pace of the economy itself.</p><p>Wielding that data comes with power, and the database is the new weapon. Responsibility is yours, and the ethos of GUN is to equip you even when disaster strikes. Because the best way to win wars is to solve them before they even begin.</p>
 			<a href="https://www.github.com/amark/gun" class="cta" target="_blank"><div><i class="fa fa-file-text-o"></i>  Open Source</div></a>
-			<a href="https://github.com/amark/gun/blob/master/LICENSE.md" class="cta" target="_blank"><div><i class="fa fa-align-right"></i>  Enterprise License</div></a>
+			<a href="pricing.html" class="cta"><div><i class="fa fa-building-o"></i> Enterprise Pricing</div></a>
 		</div>
 		<div class="triangle">
 		  <svg width="100%" height="25%" viewBox="0 0 2 2" preserveAspectRatio="none">
 		    <polygon points="2,0 2,2 0,2"/>
 		  </svg>
-		</div>	
+		</div>
 	</div>
 	<div id="trusted-by" class="page">
 		<div class="container">
-			<h1>Trusted By</h1>
+			<h1>Backed by Billionaires</h1>
+			<div class="grid">
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/benioff.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/boost.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/brands.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/crcm.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/draper_assoc.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/efficient.svg"></a>
+				<a href="https://angel.co/gun" target="_blank"><img src="img/trust_by/td.svg"></a>
+			</div>
+		</div>
+		<div class="counter">
+			<h3>200,000 <span>Installations</span></h3>
+			<p>by developers</p>
 		</div>
 	</div>
 	<div id="industry-solutions" class="page">
@@ -56,9 +80,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Location Awareness"><img src="img/icons/location_aware.svg"></a>
+						<a href="location.html"><img src="img/icons/location_aware.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Location Awareness">Location Awareness</a>
+					<a href="location.html">Location Awareness</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -70,9 +94,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Inventory Management"><img src="img/icons/inv_manager.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject: Industry solutions - Inventory Management"><img src="img/icons/inv_manager.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Inventory Management">Inventory Management</a>
+					<a href="mailto:enterprise@gundb.io?subject: Industry solutions - Inventory Management">Inventory Management</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -84,9 +108,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Multiplayer Games"><img src="img/icons/multiplayer.svg"></a>
+						<a href="multiplayer.html"><img src="img/icons/multiplayer.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Multiplayer Games">Multiplayer Games</a>
+					<a href="multiplayer.html">Multiplayer Games</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -98,9 +122,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Collaborative Apps"><img src="img/icons/collaborative.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Collaborative apps"><img src="img/icons/collaborative.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Collaborative Apps">Collaborative Apps</a>
+					<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Collaborative apps">Collaborative Apps</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -112,9 +136,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Telecomunications"><img src="img/icons/telecom.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Telecommunications"><img src="img/icons/telecom.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Telecomunications">Telecommunications</a>
+					<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Telecommunications">Telecommunications</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -126,9 +150,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Social Networks"><img src="img/icons/soc_network.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Social Networks"><img src="img/icons/soc_network.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Social Networks">Social Networks</a>
+					<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Social networks">Social Networks</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -140,9 +164,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Internet of things"><img src="img/icons/iot.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Internet of things"><img src="img/icons/iot.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Internet of things">Internet of things</a>
+					<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Internet of things">Internet of things</a>
 				</div>
 				<div class="hex-contain">
 					<div class="hexagon">
@@ -154,9 +178,9 @@
 							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 						</svg>
-						<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Data visualization"><img src="img/icons/data_visual.svg"></a>
+						<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Data visualization"><img src="img/icons/data_visual.svg"></a>
 					</div>
-					<a href="mailto:enterprise@gunDB.io?subject=Using GUN with Data visualization">Data visualization</a>
+					<a href="mailto:enterprise@gundb.io?subject:Industry solutions - Data visualization">Data visualization</a>
 				</div>
 			</div>
 		</div>
@@ -175,9 +199,9 @@
 								<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
 								<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
 							</svg>
-							<img src="img/icons/fast.svg">
+							<a href="fast.html"><img src="img/icons/fast.svg"></a>
 						</div>
-						<p>Fast</p>
+						<a href="fast.html"><p>Fast</p></a>
 					</div>
 					<div class="hex-contain">
 						<div class="hexagon">
@@ -242,204 +266,58 @@
 	</div>
 	<div id="how" class="page">
 		<div class="container">
-			<h1>How it works</h1>	
+			<h1>How it works</h1>
 			<!-- BEGIN GRAPHIC -->
-			<div class="graphic grid">
-				<img src="img/server.png" class="server" style="position: absolute; top: 2%; left: 35%; width: 50%;">
-
-				<div class="desktop">
-					<div class="monitor" style="height: 100%; width: 100%; background: #222; padding: .75em; margin-left: -.75em; border-radius: 1em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-							<img class="mouse" src="img/mouse.png">
-						</div>
-					</div>
-					<div class="stand" style="margin: 1px auto 0px;
-						border-bottom: 2.75em solid #888;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						height: 0;
-						width: 3.2em;">
-					</div>
-					<div class="stand" style="width: 6em; height: .5em; background: #888; margin: 0px auto"></div>
+			<div class="devices">
+				<div id="phone" class="device">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.25 109.76">
+						<defs><style>.phone_body{fill:#212121;}.camera{fill:#fff;}.button{fill:#6d6d6d;}</style></defs>
+						<path class="phone_body" d="M44.19,0c6.28,0,8,3.59,8,7.05l-0.32,95.72c0,3.39-.74,7-7.85,7l-35.18,0c-8,0-7.95-5.1-7.94-7.18L1,7.08A7.28,7.28,0,0,1,8.39,0Z"/>
+						<path class="camera" d="M19.64,6.65a0.76,0.76,0,1,1-.75-0.76,0.76,0.76,0,0,1,.75.76"/>
+						<path class="camera" d="M27,2.9a0.55,0.55,0,1,1-.55-0.55A0.55,0.55,0,0,1,27,2.9"/>
+						<path class="camera" d="M30.47,6.69a0.36,0.36,0,0,0-.28-0.41h-7a0.36,0.36,0,0,0-.29.41,0.36,0.36,0,0,0,.28.41h7A0.36,0.36,0,0,0,30.47,6.69Z"/>
+						<circle class="button" cx="26.5" cy="103.28" r="3.88" transform="matrix(0, -1, 1, 0, -76.82, 129.64)"/>
+						<path class="screen" d="M52.68,28a0.32,0.32,0,0,1-.3.28H52.33A0.22,0.22,0,0,1,52.15,28V20.88a0.19,0.19,0,0,1,.18-0.24h0.05a0.3,0.3,0,0,1,.3.24V28Z"/>
+						<path class="screen" d="M0.83,17.84A0.12,0.12,0,0,1,.71,18h0c-0.08,0-.09,0-0.09-0.13V12.68c0-.08,0-0.23.09-0.23h0a0.23,0.23,0,0,1,.13.23v5.16Z"/>
+						<path class="screen" d="M0.81,38a0.14,0.14,0,0,1-.13.18h0c-0.08,0-.09-0.06-0.09-0.18V31c0-.12,0-0.23.09-0.23h0A0.21,0.21,0,0,1,.82,31V38Z"/>
+						<path class="screen" d="M0.82,27.92a0.22,0.22,0,0,1-.13.25h0C0.59,28.16.58,28,.58,27.92V20.86c0-.12,0-0.29.09-0.29h0a0.29,0.29,0,0,1,.13.29v7.06Z"/>
+						<rect class="screen" x="-15.6" y="30.87" width="84.15" height="47.38" transform="translate(-28.12 80.96) rotate(-89.92)"/>
+					</svg>
+					<div class="screen" style="position: absolute; left: 5%; top: 11%; right: 5%; height: 75%;"></div>
 				</div>
-
-				<div class="laptop">
-					<div class="lid" style="height: 100%; width: 100%; background: #222; padding: .6em; margin-left: -.6em; border-radius: .6em .6em 0em 0em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-						</div>
-					</div>
-					<div class="case" style="height: .75em; width: 140%; margin-left: -20%; background: #999; border-radius: 0em 0em 5em 5em;">
-					</div>
+				<div id="tablet" class="device">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.75 163.93">
+						<defs><style>.tablet_body{fill:#212121;}.button{fill:#6d6d6d;}.camera{fill:#fff;}</style></defs>
+						<path class="tablet_body" d="M102.47,0c6.49,0,8.28,3.7,8.28,7.28l-0.2,149.41c0,3.51-.75,7.24-8.1,7.24H8.29c-8.29,0-8.22-5.26-8.22-7.41L0,7.38A7.52,7.52,0,0,1,7.68.07Z"/>
+						<rect class="screen" x="5.65" y="16.26" width="99.45" height="131.57"/>
+						<circle class="button" cx="55.38" cy="156" r="4.1"/>
+						<path class="camera" d="M56.56,8.47a1.19,1.19,0,1,1-1.19-1.19,1.19,1.19,0,0,1,1.19,1.19"/>
+					</svg>
+					<div class="screen" style="position: absolute; left: 5%; top: 10%; right: 5%; height: 79%;"></div>
 				</div>
-
-				<div class="phone">
-					<div class="case" style="height: 100%; width: 100%; background: #222; padding: .5em .2em; margin-left: -.2em; border-radius: 0.25em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-						</div>
-					</div>
-				</div>
-
-				<div class="arrow desktop-server" style="width: 52px; height: 52px; border: dashed 0px tomato; border-radius: 50px 0 0 0;
-					position: absolute; left: 20%; top: 15%; border-width: 3px 0px 0px 3px;">
-					<div class="rarr" style="position: absolute; top: -.59em; right: -.7em;
-						width: 0;
-						height: 0;
-						border-top: .5em solid transparent;
-						border-left: 1em solid Tomato;
-						border-bottom: .5em solid transparent;">
-					</div>
-					<div class="darr" style="position: absolute; bottom: -.75em; left: -.59em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-top: 1em solid Tomato;">
+				<div id="desktop" class="device">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 364.2 295.37">
+						<defs><style>.behindScreen{fill:#212121;}.dev_body{fill:#848484;}.camera{fill:#fff;}.dev_base{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="181.71" y1="291.95" x2="181.71" y2="250.67" gradientUnits="userSpaceOnUse"><stop offset="0.77" stop-color="#848484"/><stop offset="0.8" stop-color="#232323"/></linearGradient></defs>
+						<path class="behindScreen" d="M363.2,216.5V8.74A8.74,8.74,0,0,0,354.45,0H8.74A8.74,8.74,0,0,0,0,8.74V216.5H363.2Z"/>
+						<path class="dev_body" d="M0,216.5v25.42a8.74,8.74,0,0,0,8.74,8.74H354.45a8.74,8.74,0,0,0,8.74-8.74V216.5H0Z"/>
+						<path class="camera" d="M182.91,5.61a1.26,1.26,0,1,1-1.26-1.26,1.26,1.26,0,0,1,1.26,1.26"/>
+						<rect class="screen" x="12.93" y="14.39" width="337.34" height="189.78"/>
+						<path class="dev_base" d="M239.6,288.83s-9.06-7.18-11.41-9.16c-4.42-3.31-5.08-14.48-5.08-14.48l-1.59-14.53H141.89L140.3,265.2s-0.66,11.16-5.08,14.48c-2.35,2-11.41,9.16-11.41,9.16s-1.37,1.05-1.17,1.71c0,0,1.67,1.24,6,1.41h106c4.37-.17,6-1.41,6-1.41C241,289.89,239.6,288.83,239.6,288.83Z"/>
+					</svg>
+					<div class="screen" style="position: absolute; left: 3%; top: 4%; right: 3%; height: 64%;">
+						<img class="mouse" src="img/mouse.png">
 					</div>
 				</div>
-
-				<div class="arrow phone-server" style="width: 26px; height: 52px; border: dashed 0px Tomato; border-radius: 0 0 50px 0;
-					position: absolute; left: 80%; top: 35%; border-width: 0px 3px 3px 0px;">
-					<div class="uarr" style="position: absolute; top: -.9em; right: -.59em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-bottom: 1em solid Tomato;">
-					</div>
-					<div class="larr" style="position: absolute; bottom: -.55em; left: -.59em;
-						width: 0;
-						height: 0;
-						border-top: .5em solid transparent;
-						border-right: 1em solid Tomato;
-						border-bottom: .5em solid transparent;">
-					</div>
-				</div>
-
-				<div class="arrow updown laptop-server" style="height: 50px; border: dashed 0px Tomato; border-radius: 0;
-					position: absolute; left: 60%; top: 40%; border-width: 0px 3px 0px 0px;">
-					<div class="uarr" style="position: absolute; top: -1em; left: -.45em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-bottom: 1em solid Tomato;">
-					</div>
-					<div class="darr" style="position: absolute; bottom: -1em; left: -.45em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-top: 1em solid Tomato;">
-					</div>
-				</div>
-			</div>
-			<div class="graphic wide grid" style="min-width: 300px; max-width: 600px; height: 400px;
-				position: relative; margin:0 auto; padding:0; display:none;">
-
-				<div class="arrow server-server" style="width: 100px; height: 0px; border: dashed 0px FireBrick; border-radius: 0;
-					position: absolute; left: -9%; top: 15%; border-width: 3px 0px 0px 0px;">
-					<div class="rarr" style="position: absolute; top: -.59em; left: -.5em;
-						width: 0;
-						height: 0;
-						border-top: .5em solid transparent;
-						border-right: 1em solid FireBrick;
-						border-bottom: .5em solid transparent;">
-					</div>
-					<div class="larr" style="position: absolute; top: -.59em; right: -.6em;
-						width: 0;
-						height: 0;
-						border-left: 1em solid FireBrick;
-						border-bottom: .5em solid transparent;
-						border-top: .5em solid transparent;">
-					</div>
-				</div>
-
-				<img src="img/server.png" class="server" style="position: absolute; top: 2%; right: 35%; width: 50%;">
-
-				<div class="desktop" style="height: 10em; width: 17em; position: absolute; top: 36%; right: 3%;">
-					<div class="monitor" style="height: 100%; width: 100%; background: #222; padding: .75em; margin-left: -.75em; border-radius: 1em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-						</div>
-					</div>
-					<div class="stand" style="margin: 1px auto 0px;
-						border-bottom: 2.75em solid #888;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						height: 0;
-						width: 3.2em;">
-					</div>
-					<div class="stand" style="width: 6em; height: .5em; background: #888; margin: 0px auto"></div>
-				</div>
-
-				<div class="laptop" style="height: 7em; width: 12em; position: absolute; top: 60%; right: 48%;">
-					<div class="lid" style="height: 100%; width: 100%; background: #222; padding: .6em; margin-left: -.6em; border-radius: .6em .6em 0em 0em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-						</div>
-					</div>
-					<div class="case" style="height: .75em; width: 140%; margin-left: -20%; background: #999; border-radius: 0em 0em 5em 5em;">
-					</div>
-				</div>
-
-				<div class="phone" style="height: 3.75em; width: 2.25em; position: absolute; top: 35%; right: 70%;">
-					<div class="case" style="height: 100%; width: 100%; background: #222; padding: .5em .2em; margin-left: -.2em; border-radius: 0.25em;">
-						<div class="dull screen GUN" style="height: 100%; width: 100%;">
-						</div>
-					</div>
-				</div>
-
-				<div class="arrow desktop-server" style="width: 52px; height: 52px; border: dashed 0px FireBrick; border-radius: 0 50px 0 0;
-					position: absolute; right: 20%; top: 15%; border-width: 3px 3px 0px 0px;">
-					<div class="rarr" style="position: absolute; top: -.59em; left: -.5em;
-						width: 0;
-						height: 0;
-						border-top: .5em solid transparent;
-						border-right: 1em solid FireBrick;
-						border-bottom: .5em solid transparent;">
-					</div>
-					<div class="darr" style="position: absolute; bottom: -.75em; right: -.59em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-top: 1em solid FireBrick;">
-					</div>
-				</div>
-
-
-				<div class="arrow phone-server" style="width: 26px; height: 52px; border: dashed 0px FireBrick; border-radius: 0 0 0px 50px;
-					position: absolute; right: 80.3%; top: 34.3%; border-width: 0px 0px 3px 3px;">
-					<div class="uarr" style="position: absolute; top: -.8em; left: -.59em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-bottom: 1em solid FireBrick;">
-					</div>
-					<div class="rarr" style="position: absolute; bottom: -.55em; right: -.7em;
-						width: 0;
-						height: 0;
-						border-top: .5em solid transparent;
-						border-left: 1em solid FireBrick;
-						border-bottom: .5em solid transparent;">
-					</div>
-				</div>
-
-				<div class="arrow updown laptop-server" style="height: 50px; border: dashed 0px FireBrick; border-radius: 0;
-					position: absolute; right: 60%; top: 40%; border-width: 0px 3px 0px 0px;">
-					<div class="uarr" style="position: absolute; top: -1em; left: -.45em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-bottom: 1em solid FireBrick;">
-					</div>
-					<div class="darr" style="position: absolute; bottom: -1em; left: -.45em;
-						width: 0;
-						height: 0;
-						border-left: .5em solid transparent;
-						border-right: .5em solid transparent;
-						border-top: 1em solid FireBrick;">
-					</div>
+				<div id="laptop" class="device">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.6 202.98">
+						<defs><style>.behindScreen{fill:#212121;}.dev_body{fill:#848484;}.details{fill:#6d6d6d;}</style></defs>
+						<path class="behindScreen" d="M314.53,11.45A11.64,11.64,0,0,0,302.89-.19L37.71,0.19A11.64,11.64,0,0,0,26.07,11.84v0.05h0V193.7H314.53V11.89h0V11.45Z"/>
+						<path class="dev_body" d="M332.06,193.7H8.54a37,37,0,0,0-8.54.75V200l0.37,0,9.41,0.44h321l9.41-.44,0.37,0v-5.57A37.06,37.06,0,0,0,332.06,193.7Z"/>
+						<path class="details" d="M332.7,200.41l-3.28.08H11.18l-3.28-.08-7.58-.31s1.45,1.88,9.46,2.23h321c8-.35,9.46-2.23,9.46-2.23Z"/>
+						<rect class="screen" x="39.27" y="14.94" width="262.06" height="163.66"/>
+						<path class="details" d="M143.86,193.69c0,0.08,0,.15,0,0.23v0.86a4.23,4.23,0,0,0,4.23,4.23h44.44a4.23,4.23,0,0,0,4.23-4.23v-0.86c0-.08,0-0.16,0-0.23H143.86Z"/>
+					</svg>
+					<div class="screen" style="position: absolute; left: 12%; top: 6%; right: 12%; height: 80%;"></div>
 				</div>
 			</div>
 			<!-- END THE GRAPHIC -->
@@ -465,16 +343,20 @@
 		</div>
 		<nav>
 			<a href="http://gun.js.org/" target="_blank">Get Started</a>
-			<a href="https://github.com/amark/gun/wiki/JS-API" target="_blank">Documentation</a>
+			<a href="http://gun.js.org/docs" target="_blank">Documentation</a>
 			<a href="http://gun.js.org/think.html">Tutorials</a>
 			<a href="https://github.com/amark/gun">Download</a>
+			<a href="team.html">our team</a>
 		</nav>
 	</div>
 	<footer>
 		<div class="container">
-			<p>Designed with ♥ by Mark Nadal, the gun team, and many very awesome contributors. Liberally licensed under  <a href="https://github.com/amark/gun/wiki/package.json"> Zlib or MIT or Apache 2.0.</a></p>
+			<p>Designed with &hearts; by Mark Nadal, the gun team, and many very awesome contributors. Liberally licensed under  <a href="https://github.com/amark/gun/blob/master/LICENSE.md"> Zlib or MIT or Apache 2.0.</a></p>
 		</div>
 	</footer>
+
+	<!-- analytics -->
+	<script type="text/javascript" src="analytics.js"></script>
+	<script type="text/javascript" src="gun.js"></script>
 </body>
-<script type="text/javascript" src="gun.js"></script>
 </html>

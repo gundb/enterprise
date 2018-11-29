@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUN - Inventory Management</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/solutions.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="icon_holder" class="yellow">
+		<div class="hex-contain">
+			<div class="hexagon">
+				<svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.81 295.39">
+					<line class="bottom-right" x1="128.41" y1="293.67" x2="254.82" y2="220.68"/>
+					<line class="right" x1="254.82" y1="74.71" x2="254.82" y2="221.7"/>
+					<line class="top-right" x1="128.41" y1="1.72" x2="254.82" y2="74.71"/>
+					<line class="top-left" x1="1.99" y1="74.71" x2="128.41" y2="1.72"/>
+					<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
+					<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
+				</svg>
+				<img src="img/icons/multiplayer.svg">
+			</div>
+			<p>Multiplayer Games</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content greenStrong">
+			<a href="index.html"><div class="logoBtn yellow"><img src="img/gun_logo_white.svg"></div></a>
+			<h1 class="yellow_header">Trace Game</h1>
+			<p>As the web becomes a more collaborative place, apps are increasingly expected to have realtime features, and online gaming is certainly no exception. This can quickly become complicated, since games don't always fall into simple document, table, or key-value data formats, and trying to merge that data across peers can become troublesome. If merges aren't handled just right, game state can differ from each player, causing inconsistent user experience and gameplay bugs that are difficult to track down.</p>
+
+			<p>GUN handles the merge problems behind the scenes, and syncs your game state between the other players handling the merge for you, letting you focus on the game itself.</p>
+
+			<img src="img/trace_game.png">
+
+			<p>One of our published GUN apps is a realtime game with mechanics similar to Tron. Several different components of the game are synced between the clients and server, such as the waiting room, game board, and the player positions. Each player is rendered onto the screen from GUN's state, and when a player turns or collides, it puts an update into gunDB, which updates every players' state and their view. Adding an invincibility feature to the game was as easy as telling gun whether your player was invincible, adding a one-line exception to collision detection, and adding a color to invincible players. Now every player can see who not to mess with, and all in realtime.</p>
+
+			<p>Even though most of the fun happens on the clients, servers aren't left out of the picture. Since gun works the same on both browsers and servers alike, certain aspects are handled centrally, such as the waiting room, and  inactive players. When a player joins, they push themselves to a list of waiting players. If a spot opens up in the game, the server chooses the next to take their place.</p>
+			<h1 class="yellow_header">Connect 4</h1>
+			<p>High speed games aren't the only games that benefit from real time data. Consider turn-based games: some parts of the game are slow moving, and some parts are fast (pondering a move for a while, or seeing a perfect opening and launching for it). Users don't want to wonder "Should I refresh? Are the turns actually updating?" by providing users with lightning-fast updates, they can focus on what really matters: the game.</p>
+
+			<p>We built a turn-based demo you can try based off Connect-4 (<a class="green_header" href="https://en.wikipedia.org/wiki/Connect_Four">Wikipedia Connect 4</a>). Try it with a coworker across the room, or friends in another state - the updates should happen at the speed of life.</p>
+
+			<a class="green_header" href="http://C4.gunDB.io">Click here to play</a>
+
+			<img src="img/c4game.png" style="margin-top:2em">
+
+			<p>If you want real time updates in your app, give gun a shot and let us know how it works for you!</p>
+		</div>
+		<div id="footer">
+			<div class="next green">
+				<h2>Next article <i class="fa fa-arrow-right"></i></h2>
+				<div class="hex-contain">
+					<div class="hexagon">
+						<svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.81 295.39">
+							<line class="bottom-right" x1="128.41" y1="293.67" x2="254.82" y2="220.68"/>
+							<line class="right" x1="254.82" y1="74.71" x2="254.82" y2="221.7"/>
+							<line class="top-right" x1="128.41" y1="1.72" x2="254.82" y2="74.71"/>
+							<line class="top-left" x1="1.99" y1="74.71" x2="128.41" y2="1.72"/>
+							<line class="left" x1="1.99" y1="220.68" x2="1.99" y2="74.71"/>
+							<line class="bottom-left" x1="128.41" y1="293.67" x2="1.99" y2="220.68"/>
+						</svg>
+						<img src="img/icons/collaborative.svg">
+					</div>
+					<p>Collaborative Apps</p>
+				</div>	
+			</div>
+			<div class="contact">
+				<a href="mailto:enterprise@gundb.io?Multiplayer Games">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="gun.js"></script>
+</body>
+</html>
